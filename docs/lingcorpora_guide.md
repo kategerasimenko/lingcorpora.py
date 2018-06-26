@@ -1,5 +1,3 @@
-Title: Making new API
-
 # Making new API
 
 ## Main concept
