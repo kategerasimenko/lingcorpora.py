@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Lingcorpora team'
 SITENAME = 'lingcorpora.py'
 SITEURL = 'https://kategerasimenko.github.io/lingcorpora.py'
-THEME = 'theme/'
+THEME = 'pelican-sober/'
 
 PATH = 'content'
 

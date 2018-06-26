@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Notes on Data Science, Machine Learning, &amp; Artificial Intelligence">
+    <meta name="author" content="Chris Albon">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Documentation</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../theme/js/jquery.min.js"><\/script>')
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../theme/css/bootstrap.css" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="../theme/css/ie10-viewport-bug-workaround.css" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../theme/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../theme/css/notebooks.css" />
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <link href="https://kategerasimenko.github.io/lingcorpora.py/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="lingcorpora.py Full RSS Feed" />        
+
+    <meta name="google-site-verification" content="7RLmddm4HbzdQLpwH2LH94_vBNmcaMGZSEhmmF5n0NM" />
+</head>
+
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..">Chris Albon</a>
+            </div>
+            <div class="navbar-collapse collapse" id="searchbar">
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ML/AI Notes<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="..#Blog">Blog</a></li>
+                          <li><a href="..#Machine-Learning">Machine Learning</a></li>
+                          <li><a href="..#Deep-Learning">Deep Learning</a></li>
+                          <li><a href="..#Algorithms">Algorithms</a></li>
+                          <li><a href="..#Python">Python</a></li>
+                          <li><a href="..#Statistics">Statistics</a></li>
+                          <li><a href="..#Cloud-Computing">Cloud Computing</a></li>
+                          <li><a href="..#Javascript">Javascript</a></li>
+                          <li><a href="..#SQL">SQL</a></li>
+                          <li><a href="..#Scala">Scala</a></li>
+                          <li><a href="..#Regex">Regex</a></li>
+                          <li><a href="..#Mathematics">Mathematics</a></li>
+                      </ul>
+                  </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pages/about.html">About Chris</a></li>
+                            <li><a href="https://github.com/chrisalbon">GitHub</a></li>
+                            <li><a href="https://twitter.com/chrisalbon">Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/in/chrisralbon">LinkedIn</a></li>
+                            <li><a href="https://pinboard.in/u:chrisalbon">Pinboard</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!--<li class="dropdown">
+                        <a href="../feeds/blog.rss.xml">Blog RSS</a>
+                    </li>-->
+
+
+                </ul>
+
+                <form class="navbar-form" action="../search.html" onsubmit="return validateForm(this.elements['q'].value);">
+                    <div class="form-group" style="display:inline;">
+                        <div class="input-group" style="display:table;">
+                            <span class="input-group-addon" style="width:1%;"><span class="glyphicon glyphicon-search"></span></span>
+                            <input class="form-control search-query" name="q" id="tipue_search_input" placeholder="e.g. scikit KNN, pandas merge" required autocomplete="off" type="text">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+
+    <!-- end of header section -->
+    <div class="container">
+<section id="content" class="body">
+  <header>
+    <h1>
+      Documentation
+    </h1>
+  </header>
+  <div class='article_content'>
+<h1>Documentation</h1>
+<p>Welcome to <code>lingcorpora</code>'s documentation. In order to get started, see <a href="#Installation">Installation</a> and then proceed to <a href="#Quickstart">Quickstart</a>. For parameter description, see <a href="#Making-queries">Making queries</a>. To obtain description of our <code>Target</code> and <code>Result</code> objects, go to <a href="#Working-with-results">Working with results</a>.</p>
+<ul>
+<li><a href="#Installation">Installation</a></li>
+<li><a href="#Quickstart">Quickstart</a></li>
+<li><a href="#Making-queries">Making queries</a></li>
+<li><a href="#lingcorpora.Corpus">lingcorpora.Corpus</a></li>
+<li><a href="#Corpora">Corpora</a></li>
+<li><a href="#Working-with-results">Working with results</a></li>
+<li><a href="#lingcorpora.Target">lingcorpora.Target</a></li>
+<li><a href="#lingcorpora.Result">lingcorpora.Result</a></li>
+</ul>
+<h2>Installation</h2>
+<p>To install <code>lingcorpora</code>, type in the terminal:</p>
+<div class="codehilite"><pre><span></span>pip install lingcorpora
+</pre></div>
+
+
+<p>lingcorpora has dependencies on:
+<em> <a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>
+</em> <a href="http://lxml.de">lxml</a>
+<em> <a href="http://docs.python-requests.org/en/master/">requests</a>
+</em> <a href="https://github.com/tqdm/tqdm">tqdm</a></p>
+<p><code>lingcorpora</code> will install these packages during installation. If you have troubles with installing dependencies, check Installation section in the documentation of the according packages.</p>
+<h2>Quickstart</h2>
+<p>To search in any corpus, you need to create an instance of <code>Corpus</code> object and use method <code>search</code>:</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">lingcorpora</span> <span class="kn">import</span> <span class="n">Corpus</span>
+<span class="n">rus_corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;rus&#39;</span><span class="p">)</span>
+<span class="n">rus_results</span> <span class="o">=</span> <span class="n">rus_corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;мешок&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">rus_results</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;мешок&quot;: 100%|███████████████████████████████| 10/10 [00:07&lt;00:00,  1.40docs/s]
+
+
+
+
+
+[Result(query=мешок, N=10, params={&#39;numResults&#39;: 10, &#39;kwic&#39;: True, &#39;nLeft&#39;: None, &#39;nRight&#39;: None, &#39;queryLanguage&#39;: None, &#39;subcorpus&#39;: &#39;main&#39;, &#39;tag&#39;: False, &#39;start&#39;: 0, &#39;writingSystem&#39;: None})]
+</pre></div>
+
+
+<p>All results are stored in the <code>Result</code> object. <code>Result</code> is the list of <code>Target</code> objects. To print the data, you can use the following code:</p>
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">rus_results</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">target</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">target</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>1  [lafet, nick]   «Считают, что если они кому-нибудь отсыпят мешок золота, то можно всех пригласить? 
+2  [Hamlet, nick]   ещё добрые преподы, которым просто некогда, и которые за мешок с пивом лихо ставили не самые плохие оценки всей группе ^ Но, но, но… 
+3  ))) И мешок для сменки Немо, и рюкзак, и пеналы-ручки-тетрадки. 
+4  Можешь использовать мешок многократно, простирывая после каждой варки с мылом, но только не в стиральном порошке. 
+5  И этот мешок ― как скатерть-самобранка; в нём всё прибывает орехов. 
+6  Наверняка пойдёт на дно, как мешок с песком!&quot; 
+7   Капитан-шеф-повар побежал было на нос, чтобы увести Эле-Фантика Но как раз в этот миг налетел девятый вал и, подстегиваемый ураганом, рухнул, как девятиэтажный дом, точно на слонёнка - ослепил, оглушил, закрутил в водовороте и снёс за борт, как большой мешок с песком. 
+8   8. 39. Древнегреческий учёный Аристотель для доказательства невесомости воздуха взвешивал пустой кожаный мешок и тот же мешок, наполненный воздухом. 
+9   8. 39. Древнегреческий учёный Аристотель для доказательства невесомости воздуха взвешивал пустой кожаный мешок и тот же мешок, наполненный воздухом. 
+10   8. 39. Потому что вес мешка с воздухом увеличивался на столько, на сколько увеличивалась выталкивающая сила, действующая со стороны воздуха на раздутый мешок.
+</pre></div>
+
+
+<p>Output can be transformed to <code>kwic</code> format:</p>
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">rus_results</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">target</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">target</span><span class="o">.</span><span class="n">kwic</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">right</span><span class="o">=</span><span class="mi">5</span><span class="p">)))</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>1 что если они кому-нибудь отсыпят  мешок   золота, то можно всех пригласить?
+2 просто некогда, и которые за  мешок   с пивом лихо ставили не
+3 ))) И мешок   для сменки Немо, и рюкзак,
+4 Можешь использовать   мешок   многократно, простирывая после каждой варки
+5 И этот    мешок   ― как скатерть-самобранка; в нём
+6 Наверняка пойдёт на дно, как  мешок   с песком!&quot;
+7 снёс за борт, как большой мешок   с песком.
+8 невесомости воздуха взвешивал пустой кожаный  мешок   и тот же мешок, наполненный
+9 кожаный мешок и тот же    мешок   ,наполненный воздухом.
+10 со стороны воздуха на раздутый   мешок   .
+</pre></div>
+
+
+<p>You can search by multiple queries:</p>
+<div class="codehilite"><pre><span></span><span class="n">rus_results</span> <span class="o">=</span> <span class="n">rus_corp</span><span class="o">.</span><span class="n">search</span><span class="p">([</span><span class="s1">&#39;сумка&#39;</span><span class="p">,</span><span class="s1">&#39;мешок&#39;</span><span class="p">],</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">rus_results</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">target</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">target</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;сумка&quot;: 100%|███████████████████████████████| 10/10 [00:05&lt;00:00,  1.81docs/s]
+&quot;мешок&quot;: 100%|███████████████████████████████| 10/10 [00:06&lt;00:00,  1.58docs/s]
+
+
+1  При этом у меня ещё была тяжеленная сумка и чужой дорогой фотоаппарат.. 
+2  И вдруг увидела, что её сумка разрезана. 
+3  Господин Эрмес-Дюма мягко намекнул Джейн, что её сумка для ручной клади ― эта была плетёная корзинка в стиле &quot;воронье гнездо&quot; ― выглядит как-то… ну, неподобающим для известной актрисы образом. 
+4  Простая на первый взгляд, классическая сумка стоит от $ 6 тысяч (хм, мог бы получиться неплохой автомобиль!), а чтобы её купить, нужно ждать от шести месяцев до двух лет, встав на waitlist! 
+5  За что сумка Birkin такая дорогая и отчего каждые девять секунд в мире кто-нибудь покупает платок-каре от Hermes? 
+6  Кроме того что эту сумочку обожала принцесса Грейс Келли и везде с ней появлялась, смотреть там особо не на что: простая классическая кожаная сумка, стоит при этом $ 12 тысяч (хм, мог бы получиться неплохой автомобиль!), а чтобы стать её обладательницей, нужно ждать минимум два года, встав на wait- list― и в очередь ещё не всех берут! 
+7   Новая сумка Dado из телячьей кожи ― несмотря на свои мягкие очертания, сумка не потеряет формы благодаря особой технологии 
+8   Новая сумка Dado из телячьей кожи ― несмотря на свои мягкие очертания, сумка не потеряет формы благодаря особой технологии 
+9  Спина у него была всего одна, и на ней уже громоздился вещмешок с толом и гранатами, плечо давила увесистая санитарная сумка, в руках он держал винтовку. 
+10  Санитарная сумка немного давила его плечо, но уж как-нибудь он её донесёт.
+
+1  [lafet, nick]   «Считают, что если они кому-нибудь отсыпят мешок золота, то можно всех пригласить? 
+2  [Hamlet, nick]   ещё добрые преподы, которым просто некогда, и которые за мешок с пивом лихо ставили не самые плохие оценки всей группе ^ Но, но, но… 
+3  ))) И мешок для сменки Немо, и рюкзак, и пеналы-ручки-тетрадки. 
+4  Можешь использовать мешок многократно, простирывая после каждой варки с мылом, но только не в стиральном порошке. 
+5  И этот мешок ― как скатерть-самобранка; в нём всё прибывает орехов. 
+6  Наверняка пойдёт на дно, как мешок с песком!&quot; 
+7   Капитан-шеф-повар побежал было на нос, чтобы увести Эле-Фантика Но как раз в этот миг налетел девятый вал и, подстегиваемый ураганом, рухнул, как девятиэтажный дом, точно на слонёнка - ослепил, оглушил, закрутил в водовороте и снёс за борт, как большой мешок с песком. 
+8   8. 39. Древнегреческий учёный Аристотель для доказательства невесомости воздуха взвешивал пустой кожаный мешок и тот же мешок, наполненный воздухом. 
+9   8. 39. Древнегреческий учёный Аристотель для доказательства невесомости воздуха взвешивал пустой кожаный мешок и тот же мешок, наполненный воздухом. 
+10   8. 39. Потому что вес мешка с воздухом увеличивался на столько, на сколько увеличивалась выталкивающая сила, действующая со стороны воздуха на раздутый мешок.
+</pre></div>
+
+
+<p><a href="#Documentation">To the top</a></p>
+<h2>Making queries</h2>
+<h3>lingcorpora.Corpus</h3>
+<p>lingcorpora.Corpus(language, sleep_time=1, sleep_each=5)<br>
+The object of this class should be instantiated for each corpus. Search is conducted via <code>search</code> method.</p>
+<h4>Attributes</h4>
+<ul>
+<li><strong>language</strong>: str: in most cases, language <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-3 code</a> for the corpus with combined codes for parallel corpora. List of available corpora with corresponding codes:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Corpus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bam</td>
+<td><a href="#Corpus-Bambara-de-Reference">Corpus Bambara de Reference</a></td>
+</tr>
+<tr>
+<td>emk</td>
+<td><a href="#Maninka-Automatically-Parsed-corpus">Maninka Automatically Parsed corpus</a></td>
+</tr>
+<tr>
+<td>rus</td>
+<td><a href="#National-Corpus-of-Russian-Language">National Corpus of Russian Language</a></td>
+</tr>
+<tr>
+<td>rus_parallel</td>
+<td><a href="#Parallel-subcorpus-of-National-Corpus-of-Russian-Language">Parallel subcorpus of National Corpus of Russian Language</a></td>
+</tr>
+<tr>
+<td>zho</td>
+<td><a href="#Center-of-Chinese-Linguistics-corpus">Center of Chinese Linguistics corpus</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>sleep_time</strong>: int, optional, default 1: the length of pause between requests to the corpus (in seconds). It is required to avoid blocking and corpus breakdown.</li>
+<li><strong>sleep_each</strong>: int, optional, default 5: the number of requests after which a pause is required.</li>
+<li><strong>doc</strong>: str: documentation for chosen corpus (after instance creation).</li>
+<li><strong>results</strong>: list: list of all <code>Result</code> objects, each returned by <code>search</code> method.</li>
+<li><strong>failed</strong>: list: list of <code>Result</code> objects where nothing was found.</li>
+</ul>
+<h4>lingcorpora.Corpus.search(query, *args, **kwargs)</h4>
+<p>This is a search function that queries the corpus and returns the results.</p>
+<h5>Arguments</h5>
+<p>Here we provide a comprehensive list of arguments, although not all arguments are applicable to all corpora and the default values depend on a corpus. For specific description, go to <a href="#Corpora">Corpora</a> subsection.</p>
+<p>Two arguments are universal:</p>
+<ul>
+<li><strong>query</strong>: str or list[str]: query or queries</li>
+<li><strong>numResults</strong>: int, optional, default 100: number of results wanted</li>
+</ul>
+<p>Other depend on the corpus:</p>
+<ul>
+<li><strong>kwic</strong>: boolean, optional, default True: <code>kwic</code> format (True) or a sentence (False)</li>
+<li><strong>nLeft</strong>: int, optional: number of words / symbols (corpus-specific) in the left context</li>
+<li><strong>nRight</strong>: int, optional: number of words / symbols (corpus-specific) in the right context</li>
+<li><strong>queryLanguage</strong>: str: for parallel corpora, language of the query</li>
+<li><strong>subcorpus</strong>: str, optional: subcorpus to search in</li>
+<li><strong>tag</strong>: boolean, optional, default False: whether to download grammatical information if the corpus is annotated</li>
+<li><strong>writingSystem</strong>: str, optional: writing system of results</li>
+</ul>
+<h5>Output</h5>
+<ul>
+<li><strong>Result</strong>: list: resuls for queries in current search</li>
+</ul>
+<p><code>search</code> returns the result of current query and adds it to <code>results</code> attribute of corresponding <code>Corpus</code> object. In the following example, <code>first_result</code> and <code>second_result</code> contain results of two queries (the second consists of two <code>Result</code> objects), whereas <code>bam_corp.results</code> contains all results obtained from the corpus.</p>
+<div class="codehilite"><pre><span></span><span class="n">bam_corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;bam&#39;</span><span class="p">)</span>
+
+<span class="n">first_result</span> <span class="o">=</span> <span class="n">bam_corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;jamana&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_result</span><span class="p">)</span>
+<span class="n">second_result</span> <span class="o">=</span> <span class="n">bam_corp</span><span class="o">.</span><span class="n">search</span><span class="p">([</span><span class="s1">&#39;kuma&#39;</span><span class="p">,</span><span class="s1">&#39;fɔra&#39;</span><span class="p">],</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">second_result</span><span class="p">)</span>
+
+<span class="n">bam_corp</span><span class="o">.</span><span class="n">results</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;jamana&quot;: 100%|██████████████████████████████| 10/10 [00:02&lt;00:00,  4.23docs/s]
+
+
+[Result(query=jamana, N=10, params={&#39;numResults&#39;: 10, &#39;kwic&#39;: True, &#39;nLeft&#39;: None, &#39;nRight&#39;: None, &#39;queryLanguage&#39;: None, &#39;subcorpus&#39;: &#39;corbama-net-non-tonal&#39;, &#39;tag&#39;: False, &#39;start&#39;: 0, &#39;writingSystem&#39;: None})]
+
+
+&quot;kuma&quot;: 100%|████████████████████████████████| 10/10 [00:02&lt;00:00,  4.36docs/s]
+&quot;fɔra&quot;: 100%|████████████████████████████████| 10/10 [00:02&lt;00:00,  4.42docs/s]
+
+
+[Result(query=kuma, N=10, params={&#39;numResults&#39;: 10, &#39;kwic&#39;: True, &#39;nLeft&#39;: None, &#39;nRight&#39;: None, &#39;queryLanguage&#39;: None, &#39;subcorpus&#39;: &#39;corbama-net-non-tonal&#39;, &#39;tag&#39;: False, &#39;start&#39;: 0, &#39;writingSystem&#39;: None}), Result(query=fɔra, N=10, params={&#39;numResults&#39;: 10, &#39;kwic&#39;: True, &#39;nLeft&#39;: None, &#39;nRight&#39;: None, &#39;queryLanguage&#39;: None, &#39;subcorpus&#39;: &#39;corbama-net-non-tonal&#39;, &#39;tag&#39;: False, &#39;start&#39;: 0, &#39;writingSystem&#39;: None})]
+
+
+
+
+
+[Result(query=jamana, N=10, params={&#39;numResults&#39;: 10, &#39;kwic&#39;: True, &#39;nLeft&#39;: None, &#39;nRight&#39;: None, &#39;queryLanguage&#39;: None, &#39;subcorpus&#39;: &#39;corbama-net-non-tonal&#39;, &#39;tag&#39;: False, &#39;start&#39;: 0, &#39;writingSystem&#39;: None}),
+ Result(query=kuma, N=10, params={&#39;numResults&#39;: 10, &#39;kwic&#39;: True, &#39;nLeft&#39;: None, &#39;nRight&#39;: None, &#39;queryLanguage&#39;: None, &#39;subcorpus&#39;: &#39;corbama-net-non-tonal&#39;, &#39;tag&#39;: False, &#39;start&#39;: 0, &#39;writingSystem&#39;: None}),
+ Result(query=fɔra, N=10, params={&#39;numResults&#39;: 10, &#39;kwic&#39;: True, &#39;nLeft&#39;: None, &#39;nRight&#39;: None, &#39;queryLanguage&#39;: None, &#39;subcorpus&#39;: &#39;corbama-net-non-tonal&#39;, &#39;tag&#39;: False, &#39;start&#39;: 0, &#39;writingSystem&#39;: None})]
+</pre></div>
+
+
+<h4>lingcorpora.Corpus.retry_failed()</h4>
+<p>This function redoes queries that returned empty results.</p>
+<h5>Arguments</h5>
+<p>There are no arguments, failed queries are taken from <code>failed</code> attribute of the <code>Corpus</code> instance.</p>
+<h5>Output</h5>
+<p>List of <code>Result</code> objects for which the second try was successful. It also appends successful results to the <code>results</code> attribute of the <code>Corpus</code> instance and rewrites <code>failed</code> attribute with queries that remained unsuccessful.</p>
+<p><a href="#Documentation">To the top</a></p>
+<h3>Corpora</h3>
+<h4><a href="http://maslinsky.spb.ru/bonito/run.cgi/first_form">Corpus Bambara de Reference</a></h4>
+<h5>Relevant parameters</h5>
+<ul>
+<li><strong>query</strong>: str or list[str]: query or queries (currently only exact search by word or phrase is available)</li>
+<li><strong>numResults</strong>: int, default 100: number of results wanted</li>
+<li><strong>kwic</strong>: boolean, default True: <code>kwic</code> format (True) or a sentence (False)</li>
+<li><strong>tag</strong>: boolean, default False: whether to collect grammatical tags for target word or not (available only for <code>corbama-net-non-tonal</code> subcorpus)</li>
+<li><strong>subcorpus</strong>: str, default <code>corbama-net-non-tonal</code>: subcorpus. Available options: <code>corbama-net-non-tonal</code>, <code>corbama-net-tonal</code>, <code>corbama-brut</code></li>
+</ul>
+<h5>Example of use</h5>
+<div class="codehilite"><pre><span></span><span class="n">corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;bam&#39;</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;kɔ́nɔ&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">subcorpus</span><span class="o">=</span><span class="s1">&#39;corbama-net-tonal&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">target</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">target</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;kɔ́nɔ&quot;: 100%|███████████████████████████████| 10/10 [00:02&lt;00:00,  4.46docs/s]
+
+
+1 à fɔra kó mɔ̀gɔ sí kànâ táa kúngo kɔ́nɔ sélidonya fɛ̀ . àlê y&#39; í túgu kà
+2 y&#39; í túgu kà táa . à sélen kúngo kɔ́nɔ , à y&#39; à sɔ̀rɔ warabilenw bɛ́ tulonkɛ
+3 fɔɲi-fɔɲi » . npogotiginin seginna dùgu kɔ́nɔ , k&#39; ò ɲɛ́fɔ à bá yé . kàbini
+4 kà kɛ́ wárabilen yé , kà táa kúngo kɔ́nɔ . ò kɔ́ , dùgu denmisɛnw bɛ́ɛ ye
+5 kà kɛ́ warabilenw yé , kà táa kúngo kɔ́nɔ . Dugumɔgɔw bɛ́ɛ yɛlɛmana kà kɛ́ warabilenw
+6 dá . jùla dɔw tɛ̀mɛntɔ dùgu ìn kɔ́nɔ , ù kabakoyara kà mùsokɔrɔba ìn kélen
+7 mùsokɔrɔba kó , kó dénnin dɔ́ taara kúngo kɔ́nɔ sélidonya fɛ̀ . à ye warabilenw sɔ̀rɔ
+8 lá . kàbini dénnin ìn seginna dùgu kɔ́nɔ kà sègin dɔ̀nkili ìn kàn à bá yé
+9 yɛlɛmana kà kɛ́ wárabilen yé kà táa kúngo kɔ́nɔ . ò kɔ́ , dùgu mɔgɔw ye dɔ̀nkili ìn
+10 yɛlɛmana kà kɛ́ wárabilen yé kà táa kúngo kɔ́nɔ . ǹka , nê ma sɔ̀n kà à dá , ò dè
+</pre></div>
+
+
+<p><a href="#Documentation">To the top</a></p>
+<h4><a href="http://maslinsky.spb.ru/emk/run.cgi/first_form">Maninka Automatically Parsed corpus</a></h4>
+<h5>Relevant parameters</h5>
+<ul>
+<li><strong>query</strong>: str or list[str]: query or queries (currently only exact search by word or phrase is available)</li>
+<li><strong>numResults</strong>: int, default 100: number of results wanted</li>
+<li><strong>kwic</strong>: boolean, default True: <code>kwic</code> format (True) or a sentence (False)</li>
+<li><strong>subcorpus</strong>: str, default <code>cormani-brut-lat</code>: subcorpus. Available options: <code>cormani-brut-lat</code>, <code>corbama-brut-nko</code></li>
+<li><strong>writingSystem</strong>: str, default <code>None</code>: writing system for examples. Available options: <code>nko</code>, <code>latin</code>. Bug: only <code>latin</code> for <code>corbama-brut-nko</code> subcorpus.</li>
+</ul>
+<h5>Example of use</h5>
+<div class="codehilite"><pre><span></span><span class="n">corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;emk&#39;</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;tuma bɛɛ&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">writingSystem</span><span class="o">=</span><span class="s1">&#39;nko&#39;</span><span class="p">,</span> <span class="n">kwic</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">target</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">target</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;tuma bɛɛ&quot;: 100%|████████████████████████████| 10/10 [00:02&lt;00:00,  4.42docs/s]
+
+
+1 ߁߄ ߊߟߎ ߕߍߘߍ ߊߟߎ ߟߊߘߍߟߊ ߊߟߟߊ ߕߊߙߊ ߞߊ߲ߡߊ ߕߎߡߊ ߓߍ߯ .
+2 ‹ ߣ ߞߊ ߝߊ߯ߡߊ ߦߋ ߣ ߢߍ ߕߎߡߊ ߓߍ߯ .
+3 ߊߟߎ ߞߊ߲ ߞߏ : « ߗߍ ߣߌ߲ ߦߋ ߞߎߡߊ ߖߎ߯ ߝߐߟߊ ߦߐߙߐ ߛߊߣߌߡߊ߲ ߣߌ߲ ߡߊ ߕߎߡߊ ߓߍ߯ , ߞߊ ߞߎߡߊ ߖߎ߯ ߝߐ ߞߋߟߊ ߡߎߛߊ ߟߊ ߛߊߙߌߦߊ ߝߊߣߊ߲ ߡߊ .
+4 ߁ ߥߏ ߕߎߡߊ , ߛߐߟߌ ߕߍߘߍ ߝߊ߯ߡߊ ߌߛߊ ߟߊ ߞߊߙߊ߲ߘߋ߲ߣߎ ߟߊ ߢߊߣߊߡߊߦߊ ߡߊߛߌߟߊ߲ߣߊ ߕߎߡߊ ߓߍ߯ .
+5 ߡߏߛߏ ߥߏ ߕߍߘߍ ߞߏߢߎߡߊ ߞߍߟߊ ߕߎߡߊ ߓߍ߯ ߞߊ ߝߊ߲ߕߊ߲ߣߎ ߘߍߡߍ߲ .
+6 ߊ ߕߍߘߍ ߦߊߤߎߘߌߦߊ ߝߊ߲ߕߊ߲ߣߎ ߛߐߟߊ ߞߏߛߍߓߍ , ߞߊ ߊߟߟߊ ߕߊߙߊ ߕߎߡߊ ߓߍ߯ .
+7 ߁߇ ߞߐߣߌ߲ ߊ ߕߍߘߍ ߊ ߖߍߘߍ ߦߌߘߊߞߊߟߊ ߊߟߎ ߟߊ ߕߎߡߊ ߓߍ߯ ߊߟߊ ߞߋߥߊߟߌߢߎߡߊߟߎ ߝߍ .
+8 ߁߆ ߥߏ ߟߋ ߘߐ , ߣ ߦߋ ߣ ߘߐߖߊߟߊ ߕߎߡߊ ߓߍ߯ ߛߊ ߣ ߞߐߣߐߜߍߦߊߣߍ߲ ߘߌ ߕߏ .
+9 ߥߏ ߟߋ ߘߐ , ߊ ߕߍߘߍ ߔߐߟߌ ߞߌߟߌߟߊ ߕߎߡߊ ߓߍ߯ ߞߊ ߓߊߘߏ ߞߍ ߊ ߝߍ .
+10 ߂߉ ߣ ߦߋ ߊ ߝߍ ߟߋ ߖߎߛߎ ߥߏ ߢߐ߲߰ ߦߋ ߞߍ ߊߟߎ ߓߏߟߏ ߕߎߡߊ ߓߍ߯ ߞߊ ߛߌߟߊ߲ ߣ ߢߍ ߞߊ ߣߣߊ ߖߊߡߊߙߌߟߌߟߎ ߓߍ߯ ߟߊߕߋߟߋ߲ , ߛߊ ߊߟߎ ߣߌ ߊߟߎ ߞߐߡߐ߰ߟߎ ߓߍ߯ ߘߌ ߤߍߙߍ ߛߐߘߐ߲ ߞߊߘߊߥߎ .
+</pre></div>
+
+
+<p><a href="#Documentation">To the top</a></p>
+<h4><a href="http://ruscorpora.ru">National Corpus of Russian Language</a></h4>
+<h5>Relevant parameters</h5>
+<ul>
+<li><strong>query</strong>: str or list[str]: query or queries (currently only exact search by word or phrase is available)</li>
+<li><strong>numResults</strong>: int, default 100: number of results wanted</li>
+<li><strong>kwic</strong>: boolean, default True: <code>kwic</code> format (True) or a sentence (False)</li>
+<li><strong>tag</strong>: boolean, default False: whether to collect grammatical tags for target word or not</li>
+<li><strong>subcorpus</strong>: str, default <code>main</code>: subcorpus. Available options:<code>main</code>, <code>syntax</code>, <code>paper</code>, <code>regional</code>, <code>school</code>, <code>dialect</code>, <code>poetic</code>, <code>spoken</code>, <code>accent</code>, <code>murco</code>, <code>multiparc</code>, <code>old_rus</code>, <code>birchbark</code>, <code>mid_rus</code>, <code>orthlib</code>.</li>
+</ul>
+<h5>Example of use</h5>
+<div class="codehilite"><pre><span></span><span class="n">corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;rus&#39;</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;сердце&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">subcorpus</span><span class="o">=</span><span class="s1">&#39;poetic&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">target</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">target</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;сердце&quot;: 100%|██████████████████████████████| 10/10 [00:04&lt;00:00,  2.22docs/s]
+
+
+1   Не будильник поставлен на шесть,  а колотится сердце быстрей. 
+2   Да и сердце легче бьется ― поддается уговорам. 
+3   Прелесть, от нее дрожит сердце возле птиц или ночниц бледных. 
+4   Чтоб они стали перинами белыми с мягкой опорой на дне,  и невредимыми съехали, целыми дети на той стороне.   Сердце привязано ниткой невидимой.   Нить коротка, а земля велика. 
+5   Моя мама умерла девятого мая, когда всюду день-деньской надрывают сердце «аты-баты» ― коллективный катарсис такой. 
+6  Чтобы скорей, скорей горло его достать.   Сердце его потрогать. 
+7   И ― прочь через площадь в закатных лучах В какой-нибудь Чехии, Польше… Разбитое сердце, своя голова на плечах ― Чего тебе больше? 
+8   «Хотел бы я знать, если Бог повелит,  О чем твое старое сердце болит». 
+9   Когда уйдет последний друг И в сердце перемрут подруги,  Я очерчу незримый круг И лиру заключу в том круге. 
+10   О том не надо вспоминать,  Но что-то в сердце изломилось:  ― Не узнаю родную мать.
+</pre></div>
+
+
+<p><a href="#Documentation">To the top</a></p>
+<h4><a href="http://ruscorpora.ru/search-para-multi.html">Parallel subcorpus of National Corpus of Russian Language</a></h4>
+<h5>Relevant parameters</h5>
+<ul>
+<li><strong>query</strong>: str or list[str]: query or queries (currently only exact search by word or phrase is available)</li>
+<li><strong>queryLanguage</strong>: str: language of the query</li>
+<li><strong>numResults</strong>: int, default 100: number of results wanted</li>
+<li><strong>kwic</strong>: boolean, default True: <code>kwic</code> format (True) or a sentence (False)</li>
+<li><strong>tag</strong>: boolean, default False: whether to collect grammatical tags for target word or not</li>
+<li><strong>subcorpus</strong>: str, default <code>rus</code> (search by all target languages): subcorpus. Available options: <code>rus</code>, <code>eng</code>, <code>bel</code>, <code>bul</code>, <code>bua</code>, <code>esp</code>, <code>ita</code>,<code>zho</code>, <code>lav</code>, <code>ger</code>, <code>pol</code>, <code>ukr</code>, <code>fra</code>, <code>sve</code>, <code>est</code>.</li>
+</ul>
+<h5>Example of use</h5>
+<div class="codehilite"><pre><span></span><span class="n">corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;rus_parallel&#39;</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;авось&#39;</span><span class="p">,</span> <span class="n">queryLanguage</span><span class="o">=</span><span class="s1">&#39;rus&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">target</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">target</span><span class="o">.</span><span class="n">transl</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">target</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;авось&quot;: 100%|███████████████████████████████| 10/10 [00:03&lt;00:00,  3.04docs/s]
+
+
+1 — Un Russe, ça tient sur trois béquilles: “on sait jamais”, “on verra bien”, et “on s&#39;en sortira toujours”. 
+ – Русский человек крепок на трех сваях – «авось», «небось» и «как-нибудь».
+2 – Да ви кажа, не ми се вярва… – Порфирий Петрович махна с ръка. – И нищо няма да излезе от цялата работа Съвсем безнадежден случай… Но впрочем идете.    Може да извадите по-голям късмет от мен.    И позна. 
+ – Я признаться уж не верю-с… – Порфирий Петрович махнул рукой. – Ничего мы тут не зацепим. Кругом одна безнадежность… А впрочем сходите.    Авось вам больше моего повезет.    И ведь как в воду смотрел.
+3 Руският злодей е пламенен и недалновиден, убива както дойде. 
+ Русский злодей горяч и нерасчетлив, крушит на авось.
+4 Първо, престъплението се оказа все пак не европейско, а руско, стремглаво. 
+ Во-первых, преступление все-таки оказалось не европейское, а русское, на авось.
+5 И сложете на всекиго номер.    Да се надяваме, че няма да ги объркаме.    Вече ги научих всички наизуст. 
+ Да еще нумер каждому проставьте.    Ничего, авось не перепутаем-с.    Я их всех уж наизусть успел выучить.
+6 Nikt, rzecz jasna, nie zabroni waszej dostojności słać dalszych epistoł, kropla wszak drąży skałę, kto wie, może któryś z kardynałów wreszcie ulegnie, może wreszcie mnie odwołają? 
+ Никто, естественно, не запретит вашей милости кропать новые эпистолы, ибо капля камень точит, как знать, авось кто-нибудь из кардиналов наконец поддастся, возможно, меня наконец отзовут.
+7 Становішча яго, канешне, было зусім ахавае, хаця ў глыбіні сьвядомасьці ўсё ж таілася маленькая спадзёўка.    На авось ці, можа, на цуд.    Калі іншага не было, звычайна спадзяваліся на цуд, мабыць, так было заўжды. 
+ Положение его, конечно, аховое, но в глубине сознания все-таки теплилась маленькая надежда.    На авось или, может, на чудо.    Когда другого не находилось, обычно полагались на чудо, так было всегда.
+8 Становішча яго, канешне, было зусім ахавае, хаця ў глыбіні сьвядомасьці ўсё ж таілася маленькая спадзёўка.    На авось ці, можа, на цуд.    Калі іншага не было, звычайна спадзяваліся на цуд, мабыць, так было заўжды. 
+ Положение его, конечно, аховое, но в глубине сознания все-таки теплилась маленькая надежда.    На авось или, может, на чудо.    Когда другого не находилось, обычно полагались на чудо, так было всегда.
+9 Цуд, вядома, памагаў рэдка, болей падводзіў, асабліва атэістаў-бальшавікоў, якія, быццам не ведаючы таго, цяпер так дружна рушылі да хрысьціянскіх цудаў.    Авось паможа!    Калі памаліцца Богу, абразам, паклікаць царкоўных іерархаў на шматлюдныя прапагандовыя шоу. 
+ Чудо, конечно, выручало редко, больше подводило, особенно атеистов-большевиков, которые теперь так дружно стали взывать к христианскому чуду.    Авось выручит!    ―
+10 Цуд, вядома, памагаў рэдка, болей падводзіў, асабліва атэістаў-бальшавікоў, якія, быццам не ведаючы таго, цяпер так дружна рушылі да хрысьціянскіх цудаў.    Авось паможа!    Калі памаліцца Богу, абразам, паклікаць царкоўных іерархаў на шматлюдныя прапагандовыя шоу. 
+ Чудо, конечно, выручало редко, больше подводило, особенно атеистов-большевиков, которые теперь так дружно стали взывать к христианскому чуду.    Авось выручит!    ―
+</pre></div>
+
+
+<p><a href="#Documentation">To the top</a></p>
+<h4><a href="http://ccl.pku.edu.cn:8080/ccl_corpus/index.jsp">Center of Chinese Linguistics corpus</a></h4>
+<h5>Relevant parameters</h5>
+<ul>
+<li><strong>query</strong>: str or list[str]: query or queries (currently only exact search by word or phrase is available)</li>
+<li><strong>numResults</strong>: int, default 100: number of results wanted</li>
+<li><strong>subcorpus</strong>: str, default <code>xiandai</code>: subcorpus. Available options: <code>xiandai</code> (modern Chinese) or <code>dugai</code> (ancient Chinese).</li>
+<li><strong>nLeft</strong>, <strong>nRight</strong>: int, default 30: context lenght (in symbols)</li>
+</ul>
+<h5>Example of use</h5>
+<div class="codehilite"><pre><span></span><span class="n">corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;zho&#39;</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;能力#3大&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">nLeft</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">nRight</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">target</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">target</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;能力#3大&quot;: 100%|███████████████████████████████| 10/10 [00:04&lt;00:00,  2.10docs/s]
+
+
+1 ...的人生方向。每年韩国高考--&quot;大学修业能力考试&quot;举行当日，所有的公务员和私...
+2 ...学生的品德如何、修养怎样、生存能力大小、自立能力强弱等这些关系孩子生...
+3 ...索引擎从网络中获取信息的动力和能力；大学前的教育大多是在以教师为中心、...
+4 ...的信息化社会中，处理非确定信息能力的大小将会成为衡量一个教师作用大小的...
+5 ...，法国中、小学生识字和拼写法文能力大幅度下降。在一项对15岁学生法文...
+6 ...公司的股东能决定要如何使用生产能力。在更大的公司里，公司的权力架构通常有一...
+7 ...如某些弹性纤维就具有弹力(变形能力)大、屈光好、韧度高以及抗酸碱侵蚀性...
+8 ...缩小,导致国家对整个社会的控制能力大大降低。例如，在SARS防治需要...
+9 ...六，七岁）。幼儿的再认识和回忆能力有很大发展，回忆范围逐渐扩大了。其特点...
+10 ...来，拍起马来，比哪一个国家的人能力都大。因之这里所谓“私”的问题却是个...
+</pre></div>
+
+
+<p><a href="#Documentation">To the top</a></p>
+<h2>Working with results</h2>
+<h3>lingcorpora.Result</h3>
+<p>The object of this class contains all results found. <code>Result</code> object is iterable and supports indexing.</p>
+<h4>Attributes</h4>
+<ul>
+<li><strong>results</strong>: list[<code>Target</code>]: list of results</li>
+<li><strong>N</strong>: int: number of results</li>
+<li><strong>lang</strong>: str: corpus language</li>
+<li><strong>query</strong>: str: search query</li>
+<li><strong>params</strong>: dict: all other parameters of the search</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="n">corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;emk&#39;</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;tuma&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">kwic</span><span class="o">=</span><span class="bp">False</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">results</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;tuma&quot;: 100%|████████████████████████████████| 10/10 [00:02&lt;00:00,  4.43docs/s]
+
+
+
+
+
+Result(query=tuma, N=10, params={&#39;numResults&#39;: 10, &#39;kwic&#39;: False, &#39;nLeft&#39;: None, &#39;nRight&#39;: None, &#39;queryLanguage&#39;: None, &#39;subcorpus&#39;: &#39;cormani-brut-lat&#39;, &#39;tag&#39;: False, &#39;start&#39;: 0, &#39;writingSystem&#39;: &#39;&#39;})
+</pre></div>
+
+
+<h4>lingcorpora.Result.export_csv(filename=None, header=True, sep=';')</h4>
+<p>Writes results into a <code>csv</code> file considering <code>kwic</code> parameter of the search.</p>
+<h5>Arguments</h5>
+<ul>
+<li><strong>filename</strong>: str, optional, default <code>None</code>: name of the file. If <code>None</code>, filename is <em>lang</em>_<em>query</em>_results.csv with omission of disallowed filename symbols</li>
+<li><strong>header</strong>: boolean, optional, default True: whether to include a header in the table</li>
+<li><strong>sep</strong>: str, optional, default <code>;</code>: cell separator in the csv</li>
+</ul>
+<h5>Output</h5>
+<p>None, writes results into the file.</p>
+<h4>lingcorpora.Result.clear()</h4>
+<p>Overwrites the <code>results</code> attribute to empty list.</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">results</span><span class="p">)</span>
+<span class="n">results</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">results</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>[Target( tuma, ), Target( tuma, ), Target( tuma, ), Target( tuma, ), Target( tuma, ), Target( tuma, ), Target( tuma, ), Target( tuma, ), Target( tuma, ), Target( tuma, )]
+[]
+</pre></div>
+
+
+<p><a href="#Documentation">To the top</a></p>
+<h3>lingcorpora.Target</h3>
+<p><code>Target</code> contains one item from the result list.</p>
+<h4>Attributes</h4>
+<ul>
+<li><strong>text</strong>: str: full example (sentence or <code>kwic</code>)</li>
+<li><strong>idxs</strong>: idxs: tuple (l, r): target indices in <strong>text</strong> -&gt; text[l:r]</li>
+<li><strong>meta</strong>: str: sentence / document metadata, e.g. document name, author, etc. (if exists)</li>
+<li><strong>tags</strong>: dict: target tags</li>
+<li><strong>transl</strong>: str: text translation (only for parallel corpora)</li>
+<li><strong>lang</strong>: str: translation language (only for parallel corpora)</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="n">rus_corp</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="s1">&#39;rus&#39;</span><span class="p">)</span>
+<span class="n">rus_results</span> <span class="o">=</span> <span class="n">rus_corp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;одеяло&#39;</span><span class="p">,</span> <span class="n">numResults</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="bp">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">first_hit</span> <span class="o">=</span> <span class="n">rus_results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">first_hit</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;одеяло&quot;: 100%|██████████████████████████████| 10/10 [00:08&lt;00:00,  1.18docs/s]
+
+
+
+
+
+Target(одеяло, Народный костюм: архаика или современность? // «Народное творчество», 2004)
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="nb">vars</span><span class="p">(</span><span class="n">first_hit</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>text  Я, например, для внучки настегала своими руками лоскутное одеяло, зная, что оно будет её оберегать, давать ей энергию. 
+idxs (59, 65)
+meta Народный костюм: архаика или современность? // «Народное творчество», 2004
+tags {&#39;lex&#39;: [&#39;одеяло&#39;], &#39;gramm&#39;: [&#39;S&#39;, &#39;inan&#39;, &#39;n&#39;, &#39;sg&#39;, &#39;acc&#39;, &#39;disamb&#39;], &#39;sem&#39;: [&#39;r:concr&#39;, &#39;t:tool:bedding&#39;], &#39;flags&#39;: [&#39;animred&#39;, &#39;bcomma&#39;, &#39;bmark&#39;, &#39;casered&#39;, &#39;genderred&#39;, &#39;numred&#39;]}
+transl None
+lang None
+</pre></div>
+
+
+<h4>lingcorpora.Target.kwic(left, right, level='word')</h4>
+<p>This function makes <code>kwic</code> format for an item for further usage and csv output.</p>
+<h5>Attributes</h5>
+<ul>
+<li><strong>left</strong>: int: length of left context</li>
+<li><strong>right</strong>: int: length of right context</li>
+<li><strong>level</strong>: str, optional, default <code>word</code>: counting context length by tokens (<code>word</code>) or by characters (<code>char</code>)</li>
+</ul>
+<h5>Output</h5>
+<p>tuple: (left context, target, right context)</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">first_hit</span><span class="o">.</span><span class="n">kwic</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">right</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_hit</span><span class="o">.</span><span class="n">kwic</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="n">right</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="s1">&#39;char&#39;</span><span class="p">))</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>(&#39;внучки настегала своими руками лоскутное&#39;, &#39;одеяло&#39;, &#39;,зная, что оно будет её&#39;)
+(&#39;егала своими руками лоскутное &#39;, &#39;одеяло&#39;, &#39;, зная, что оно будет её обере&#39;)
+</pre></div>
+
+
+<p><a href="#Documentation">To the top</a></p>
+</div>
+</section>
+    </div>
+    <!-- start of footer section -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                <center>This project contains 0 pages and is available on <a href="https://github.com/chrisalbon/notes_on_data_science_machine_learning_and_artificial_intelligence">GitHub</a>.
+                <br/>
+                Copyright &copy; Chris Albon,
+                    <time datetime="2017">2017</time>.
+                </center>
+            </p>
+        </div>
+    </footer>
+
+    <!-- This jQuery line finds any span that contains code highlighting classes and then selects the parent <pre> tag and adds a border. This is done as a workaround to visually distinguish the code inputs and outputs -->
+    <script>
+        $( ".hll, .n, .c, .err, .k, .o, .cm, .cp, .c1, .cs, .gd, .ge, .gr, .gh, .gi, .go, .gp, .gs, .gu, .gt, .kc, .kd, .kn, .kp, .kr, .kt, .m, .s, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nt, .nv, .ow, .w, .mf, .mh, .mi, .mo, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss, .bp, .vc, .vg, .vi, .il" ).parent( "pre" ).css( "border", "1px solid #DEDEDE" );
+    </script>
+
+    <!-- Load Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-66582-32', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End of Google Analytics -->
+
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../theme/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Amazon OneLink -->
+    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=946c0716-c88a-4df0-8944-a058be8c1e86"></script>
+
+</body>
+
+</html>
