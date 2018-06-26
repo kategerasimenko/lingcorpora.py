@@ -1,5 +1,6 @@
 ---
 title: Lingcorpora
+layout: page
 ---
 
 [![Build status](https://ci.appveyor.com/api/projects/status/4f5i7bwypma1gp29?svg=true)](https://ci.appveyor.com/project/kategerasimenko/lingcorpora-py)
