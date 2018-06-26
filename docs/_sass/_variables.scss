@@ -1,4 +1,4 @@
-// Journal 4.1.1
+// Cosmo 4.1.1
 // Bootswatch
 
 //
@@ -7,54 +7,62 @@
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #eee !default;
+$gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #aaa !default;
-$gray-600: #777 !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
 $gray-700: #495057 !default;
-$gray-800: #333 !default;
-$gray-900: #222 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
 $black:    #000 !default;
 
-$blue:    #EB6864 !default;
+$blue:    #2780E3 !default;
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
+$purple:  #613d7c !default;
 $pink:    #e83e8c !default;
-$red:     #F57A00 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #F5E625 !default;
-$green:   #22B24C !default;
+$red:     #FF0039 !default;
+$orange:  #f0ad4e !default;
+$yellow:  #FF7518 !default;
+$green:   #3FB618 !default;
 $teal:    #20c997 !default;
-$cyan:    #369 !default;
+$cyan:    #9954BB !default;
 
 $primary:       $blue !default;
-$secondary:     $gray-500 !default;
+$secondary:     $gray-800 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$dark:          $gray-800 !default;
+
+// Options
+
+$enable-rounded: false !default;
+
+// Body
+
+$body-color:    $gray-800 !default;
 
 // Fonts
 
-$headings-font-family:   "News Cycle", "Arial Narrow Bold", sans-serif !default;
-$headings-font-weight:        700 !default;
-$headings-line-height:        1.1 !default;
+$font-family-sans-serif: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif !default;
 
-// Buttons
+$font-size-base: 0.9375rem !default;
 
-$input-btn-padding-x:         1rem !default;
+$headings-font-weight:   300 !default;
 
 // Navbar
 
-$navbar-light-color:                rgba($black,.7) !default;
-$navbar-light-hover-color:          $black !default;
-$navbar-light-active-color:         $black !default;
+$navbar-dark-hover-color:           rgba($white,1) !default;
 
-// Pagination
+$navbar-light-hover-color:          rgba($black,.9) !default;
 
-$pagination-hover-color:            $white !default;
-$pagination-hover-bg:               $primary !default;
-$pagination-hover-border-color:     $primary !default;
+// Alerts
+
+$alert-border-width:                0 !default;
+
+// Progress bars
+
+$progress-height:               0.5rem !default;
