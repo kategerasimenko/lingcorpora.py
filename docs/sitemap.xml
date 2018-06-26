@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>https://kategerasimenko.github.io/lingcorpora.py/</loc>
+<lastmod>2018-06-26T16:32:12-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kategerasimenko.github.io/lingcorpora.py/misc/lingcorpora.html</loc>
+<lastmod>2018-06-26T16:32:08+03:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kategerasimenko.github.io/lingcorpora.py/misc/whats-new.html</loc>
+<lastmod>2018-06-26T16:31:57+03:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kategerasimenko.github.io/lingcorpora.py/misc/making-new-api.html</loc>
+<lastmod>2018-06-26T16:31:43+03:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kategerasimenko.github.io/lingcorpora.py/misc/documentation.html</loc>
+<lastmod>2018-06-26T16:31:31+03:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+</urlset>

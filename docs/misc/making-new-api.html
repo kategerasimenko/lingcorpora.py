@@ -1,0 +1,318 @@
+v<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Notes on Data Science, Machine Learning, &amp; Artificial Intelligence">
+    <meta name="author" content="Chris Albon">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Making new API - misc</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../theme/js/jquery.min.js"><\/script>')
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../theme/css/bootstrap.css" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="../theme/css/ie10-viewport-bug-workaround.css" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../theme/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../theme/css/notebooks.css" />
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <link href="https://kategerasimenko.github.io/lingcorpora.py/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="lingcorpora.py Full RSS Feed" />         <link href="https://kategerasimenko.github.io/lingcorpora.py/feeds/misc.rss.xml" type="application/rss+xml" rel="alternate" title="lingcorpora.py Categories RSS Feed" />    
+
+
+    <meta name="google-site-verification" content="7RLmddm4HbzdQLpwH2LH94_vBNmcaMGZSEhmmF5n0NM" />
+</head>
+
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..">Chris Albon</a>
+            </div>
+            <div class="navbar-collapse collapse" id="searchbar">
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ML/AI Notes<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="..#Blog">Blog</a></li>
+                          <li><a href="..#Machine-Learning">Machine Learning</a></li>
+                          <li><a href="..#Deep-Learning">Deep Learning</a></li>
+                          <li><a href="..#Algorithms">Algorithms</a></li>
+                          <li><a href="..#Python">Python</a></li>
+                          <li><a href="..#Statistics">Statistics</a></li>
+                          <li><a href="..#Cloud-Computing">Cloud Computing</a></li>
+                          <li><a href="..#Javascript">Javascript</a></li>
+                          <li><a href="..#SQL">SQL</a></li>
+                          <li><a href="..#Scala">Scala</a></li>
+                          <li><a href="..#Regex">Regex</a></li>
+                          <li><a href="..#Mathematics">Mathematics</a></li>
+                      </ul>
+                  </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pages/about.html">About Chris</a></li>
+                            <li><a href="https://github.com/chrisalbon">GitHub</a></li>
+                            <li><a href="https://twitter.com/chrisalbon">Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/in/chrisralbon">LinkedIn</a></li>
+                            <li><a href="https://pinboard.in/u:chrisalbon">Pinboard</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!--<li class="dropdown">
+                        <a href="../feeds/blog.rss.xml">Blog RSS</a>
+                    </li>-->
+
+
+                </ul>
+
+                <form class="navbar-form" action="../search.html" onsubmit="return validateForm(this.elements['q'].value);">
+                    <div class="form-group" style="display:inline;">
+                        <div class="input-group" style="display:table;">
+                            <span class="input-group-addon" style="width:1%;"><span class="glyphicon glyphicon-search"></span></span>
+                            <input class="form-control search-query" name="q" id="tipue_search_input" placeholder="e.g. scikit KNN, pandas merge" required autocomplete="off" type="text">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+
+    <!-- end of header section -->
+    <div class="container">
+<div class="alert alert-warning advert" role="alert">
+    Want to learn machine learning? Use my <a href="https://machinelearningflashcards.com" class="alert-link">machine learning flashcards</a>.
+</div>
+
+<section id="content" class="body">
+    <header>
+    <h1>
+      Making new API
+    </h1>
+<ol class="breadcrumb">
+    <li>
+        <time class="published" datetime="2018-06-26T16:31:43.771142+03:00">
+            26 Июнь 2018
+        </time>
+    </li>
+    <li>misc</li>
+</ol>
+</header>
+<div class='article_content'>
+<h1>Making new API</h1>
+<h2>Main concept</h2>
+<ul>
+<li>Search is done via <code>Corpus</code> object (<code>search</code> method)</li>
+<li>Each API of a corpus, dictionary, etc. is a <code>PageParser</code> class (see below) which has method <code>.extract()</code>.</li>
+<li><code>PageParser.extract()</code> is a generator (see <code>yield</code> in Python) of <code>Target</code> objects (individual hits).</li>
+<li><code>PageParser</code> inherits from <code>Container</code>, which is a class in <code>params_container.py</code> and contains all possible parameters for corpora.</li>
+<li>All <code>Target</code> objects are collected in <code>search</code> (in the <code>Corpus</code> object) into the <code>Result</code> object.</li>
+<li>Documentation for users can be found <a href="https://lingcorpora.github.io/lingcorpora.py/docs.html">here</a></li>
+</ul>
+<h2>To make a new API</h2>
+<ol>
+<li>Make a <code>PageParser</code> object</li>
+<li>It inherits from <code>Container</code> and <code>Container</code> constructor is called in <code>__init__</code> (see example below)</li>
+<li>It has method <code>extract()</code> which <code>yield</code>s <code>Target</code> objects</li>
+<li>All other (auxiliary) parameters in <code>PageParser</code> should be encapsulated (add to underscores <code>__</code> to their names)</li>
+<li>You should pass to <code>Target</code> object the following information:</li>
+<li>whole sentence (<code>text</code>) - string</li>
+<li>indices (<code>idxs</code>) of the target in the sentence: <code>l</code> and <code>r</code> such that target == <code>text[l:r]</code> - tuple</li>
+<li>metadata (<code>meta</code>) (document name, author, year, etc.) - string. If there is no meta, then pass empty string</li>
+<li>grammar tags (<code>tags</code>) - dict. If there are no tags, pass empty dict</li>
+<li>for parallel corpora: translation (<code>transl</code>) - translation from <code>queryLanguage</code> to another language</li>
+<li>for parallel corpora: language (<code>lang</code>) - the other language (not <code>queryLanguage</code>) in the example pair</li>
+<li><strong>Important</strong>: if there are several target occurrences in one example, you should split them into <strong>separate</strong> Target objects.</li>
+<li>Write the docstring <code>__doc__</code> and the author <code>__author__</code> before <code>PageParser</code></li>
+<li>Name the file <em>langcode</em>_corpus.py and place it into the <code>corpora</code> directory. <em>langcode</em> stands for <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-3 code</a></li>
+<li>For testing purposes the following functions must be provided (see implementation details in the template below):<ol>
+<li><code>test_single_query</code>: single query processing test-run</li>
+<li><code>test_num_results</code>: assert that amount of data extracted matches the passed one via <code>numResults</code> arg</li>
+<li><code>test_multi_query</code>: provide <code>query</code> arg for the multiple query</li>
+</ol>
+</li>
+<li>If you would like to add new search parameters, open <code>params_container.py</code> and add this parameter to the arguments (<strong>do not forget default value</strong>) and attributes.</li>
+<li>Make a pull request and if API is OK, we will:</li>
+<li>Add it to the package</li>
+<li>Include it in the docs</li>
+</ol>
+<h2>API template</h2>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">params_container</span> <span class="kn">import</span> <span class="n">Container</span>
+<span class="kn">from</span> <span class="nn">target</span> <span class="kn">import</span> <span class="n">Target</span>
+
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="vm">__doc__</span> <span class="o">=</span> \
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">PageParser</span><span class="p">(</span><span class="n">Container</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="c1"># inner auxiliary attributes:</span>
+        <span class="c1"># self.__page = None</span>
+        <span class="c1"># self.__pagenum = 0</span>
+        <span class="c1"># ...</span>
+
+    <span class="k">def</span> <span class="nf">any_method_for_getting_the_results</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="c1"># ...</span>
+
+    <span class="k">def</span> <span class="nf">any_method_for_getting_the_results_10</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">extract</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        --- Generator of found occurrences as `Target` types</span>
+<span class="sd">            Query.search() uses this method---</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># ...</span>
+
+        <span class="c1"># for each occurrence found we pass `Target` object,</span>
+        <span class="c1"># describing the occurrence, to Query.search()</span>
+        <span class="c1"># for parallel corpora also transl and lang</span>
+        <span class="k">for</span> <span class="n">text</span><span class="p">,</span> <span class="n">idxs</span><span class="p">,</span> <span class="n">meta</span><span class="p">,</span> <span class="n">tags</span> <span class="ow">in</span> <span class="n">found</span><span class="p">:</span>
+            <span class="k">yield</span> <span class="n">Target</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">idxs</span><span class="p">,</span> <span class="n">meta</span><span class="p">,</span> <span class="n">tags</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">test_single_query</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    *This is a possible valid template*</span>
+
+<span class="sd">    process single query passed as `query` arg</span>
+<span class="sd">    and make sure that all the Targets found</span>
+<span class="sd">    match the `query`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">str</span><span class="o">&gt;</span>
+
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">PageParser</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">,</span>
+                        <span class="n">numResults</span><span class="o">=</span><span class="mi">5</span>
+                        <span class="p">)</span>        
+
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">parser</span><span class="o">.</span><span class="n">extract</span><span class="p">():</span>
+        <span class="n">l</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">idxs</span>
+        <span class="k">assert</span> <span class="n">t</span><span class="o">.</span><span class="n">text</span><span class="p">[</span><span class="n">l</span><span class="p">:</span><span class="n">r</span><span class="p">]</span> <span class="o">==</span> <span class="n">query</span><span class="p">,</span> \
+               <span class="s1">&#39;does not match `query`: `</span><span class="si">%s</span><span class="s1">`&#39;</span> <span class="o">%</span> <span class="n">t</span><span class="o">.</span><span class="n">text</span><span class="p">[</span><span class="n">l</span><span class="p">:</span><span class="n">r</span><span class="p">]</span>
+
+    <span class="k">del</span> <span class="n">parser</span>
+
+
+<span class="k">def</span> <span class="nf">test_num_results</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    *This is a possible valid template*</span>
+
+<span class="sd">    assert that the amount of Targets found</span>
+<span class="sd">    matches the one passed via `numResults` arg</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">numResults</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">str</span><span class="o">&gt;</span>
+
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">PageParser</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">,</span>
+                        <span class="n">numResults</span><span class="o">=</span><span class="n">numResults</span>
+                        <span class="p">)</span>        
+
+    <span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">parser</span><span class="o">.</span><span class="n">extract</span><span class="p">())</span>
+
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="o">==</span> <span class="n">numResults</span>    
+
+    <span class="k">del</span> <span class="n">parser</span><span class="p">,</span> <span class="n">res</span>
+
+
+<span class="k">def</span> <span class="nf">test_multi_query</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    provide `query` arg as iterable[&lt;str&gt;]</span>
+<span class="sd">    for low-level testing of multiple query processing</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">str1</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">str2</span><span class="o">&gt;</span><span class="p">]</span>
+</pre></div>
+</div>
+    <aside>
+    <div class="bug-reporting__panel">
+        <h3>Find an error or bug?</h3>
+        <p>Everything on this site is available on GitHub. Head to <a href='https://github.com/chrisalbon/notes_on_data_science_machine_learning_and_artificial_intelligence/issues/new'>and submit a suggested change</a>. You can also message me directly on <a href='https://twitter.com/chrisalbon'>Twitter</a>.</p>
+    </div>
+    </aside>
+</section>
+
+    </div>
+    <!-- start of footer section -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                <center>This project contains 4 pages and is available on <a href="https://github.com/chrisalbon/notes_on_data_science_machine_learning_and_artificial_intelligence">GitHub</a>.
+                <br/>
+                Copyright &copy; Chris Albon,
+                    <time datetime="2017">2017</time>.
+                </center>
+            </p>
+        </div>
+    </footer>
+
+    <!-- This jQuery line finds any span that contains code highlighting classes and then selects the parent <pre> tag and adds a border. This is done as a workaround to visually distinguish the code inputs and outputs -->
+    <script>
+        $( ".hll, .n, .c, .err, .k, .o, .cm, .cp, .c1, .cs, .gd, .ge, .gr, .gh, .gi, .go, .gp, .gs, .gu, .gt, .kc, .kd, .kn, .kp, .kr, .kt, .m, .s, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nt, .nv, .ow, .w, .mf, .mh, .mi, .mo, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss, .bp, .vc, .vg, .vi, .il" ).parent( "pre" ).css( "border", "1px solid #DEDEDE" );
+    </script>
+
+    <!-- Load Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-66582-32', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End of Google Analytics -->
+
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../theme/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Amazon OneLink -->
+    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=946c0716-c88a-4df0-8944-a058be8c1e86"></script>
+
+</body>
+
+</html>
