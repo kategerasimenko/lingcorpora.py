@@ -38,7 +38,6 @@ ARTICLE_EXCLUDES = ['in_progress']
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['sitemap']
 
-DIRECT_TEMPLATES = ['index']
 
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
