@@ -1,5 +1,3 @@
-Title: What's new
-
 # What's new
 
 ## Production
