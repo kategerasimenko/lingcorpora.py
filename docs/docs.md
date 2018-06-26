@@ -6,7 +6,7 @@ Welcome to `lingcorpora`'s documentation. In order to get started, see [Installa
 
 * [Installation](#Installation)
 * [Quickstart](#Quickstart)
-* [Making queries](#Making-queries)
+* [Making queries](#making-queries)
   * [lingcorpora.Corpus](#lingcorpora.Corpus)
   * [Corpora](#Corpora)
 * [Working with results](#Working-with-results)
