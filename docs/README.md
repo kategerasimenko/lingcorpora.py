@@ -1,6 +1,7 @@
 ---
 title: Lingcorpora
 ---
+
 [![Build status](https://ci.appveyor.com/api/projects/status/4f5i7bwypma1gp29?svg=true)](https://ci.appveyor.com/project/kategerasimenko/lingcorpora-py)
 [![PyPI version](https://badge.fury.io/py/lingcorpora.svg)](https://badge.fury.io/py/lingcorpora)
 [![DOI](https://zenodo.org/badge/115459241.svg)](https://zenodo.org/badge/latestdoi/115459241)
