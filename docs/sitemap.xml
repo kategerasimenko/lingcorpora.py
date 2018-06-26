@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kategerasimenko.github.io/lingcorpora.py/</loc>
-<lastmod>2018-06-26T17:22:34-00:00</lastmod>
+<lastmod>2018-06-26T17:43:14-00:00</lastmod>
 <changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://kategerasimenko.github.io/lingcorpora.py/pages/lingcorpora.html</loc>
-<lastmod>2018-06-26T16:32:08+03:00</lastmod>
-<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kategerasimenko.github.io/lingcorpora.py/pages/documentation.html</loc>
 <lastmod>2018-06-26T16:31:31+03:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kategerasimenko.github.io/lingcorpora.py/pages/index.html</loc>
+<lastmod>2018-06-26T17:42:42+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
