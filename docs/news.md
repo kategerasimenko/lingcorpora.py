@@ -1,4 +1,7 @@
-# What's new
+---
+title: What's new
+layout: page
+---
 
 ## Production
 * * *
