@@ -7,11 +7,11 @@ Welcome to `lingcorpora`'s documentation. In order to get started, see [Installa
 * [Installation](#Installation)
 * [Quickstart](#Quickstart)
 * [Making queries](#Making-queries)
-  * [lingcorpora.Corpus](#lingcorpora.Corpus)
-  * [Corpora](#Corpora)
+    * [lingcorpora.Corpus](#lingcorpora.Corpus)
+    * [Corpora](#Corpora)
 * [Working with results](#Working-with-results)
-  * [lingcorpora.Target](#lingcorpora.Target)
-  * [lingcorpora.Result](#lingcorpora.Result)
+    * [lingcorpora.Target](#lingcorpora.Target)
+    * [lingcorpora.Result](#lingcorpora.Result)
 
 ## Installation
 
