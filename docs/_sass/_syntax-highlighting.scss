@@ -2,8 +2,14 @@
 
 
 .highlighter-rouge {
-    border: 1px solid #eef;
+
+    color: #111;
+    border: 2px solid #eef;
     margin: 20px 0px;
+    padding: 8px;
+    background: ghostwhite;
+    
+    
 }
     
 
@@ -11,9 +17,9 @@
 
     .highlight {
 
-      color: #111;
       border: none;
       margin: 0px;
+      padding: 0px;
 
       pre {
         margin: 0;
