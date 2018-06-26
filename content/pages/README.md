@@ -8,7 +8,8 @@ save_as: index.html
 [![DOI](https://zenodo.org/badge/115459241.svg)](https://zenodo.org/badge/latestdoi/115459241)
 
 
-This package includes API for 
+This package includes API for
+
 * [National Corpus of Russian Language](http://www.ruscorpora.ru)
 * [Parallel subcorpus of National Corpus of Russian Language](http://ruscorpora.ru/search-para-multi.html)
 * [Center of Chinese Linguistics corpus](http://ccl.pku.edu.cn:8080/ccl_corpus/index.jsp)
