@@ -1,11 +1,19 @@
 // Syntax highlighting styles, can be modified to match the theme
 
 
+.highlighter-rouge {
+    border: 1px solid #eef;
+    margin: 20px 0px;
+}
+    
+
 .language-python.highlighter-rouge {
 
     .highlight {
 
       color: #111;
+      border: none;
+      margin: 0px;
 
       pre {
         margin: 0;
@@ -76,3 +84,5 @@
     }
 
 }
+
+
