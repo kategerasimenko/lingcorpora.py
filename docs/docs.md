@@ -1,15 +1,17 @@
-# Documentation
-
+---
+title: Documentation
+layout: page
+---
 Welcome to `lingcorpora`'s documentation. In order to get started, see [Installation](#Installation) and then proceed to [Quickstart](#Quickstart). For parameter description, see [Making queries](#Making-queries). To obtain description of our `Target` and `Result` objects, go to [Working with results](#Working-with-results).
 
 * [Installation](#Installation)
 * [Quickstart](#Quickstart)
 * [Making queries](#Making-queries)
-    * [lingcorpora.Corpus](#lingcorpora.Corpus)
-    * [Corpora](#Corpora)
+  * [lingcorpora.Corpus](#lingcorpora.Corpus)
+  * [Corpora](#Corpora)
 * [Working with results](#Working-with-results)
-    * [lingcorpora.Target](#lingcorpora.Target)
-    * [lingcorpora.Result](#lingcorpora.Result)
+  * [lingcorpora.Target](#lingcorpora.Target)
+  * [lingcorpora.Result](#lingcorpora.Result)
 
 ## Installation
 
