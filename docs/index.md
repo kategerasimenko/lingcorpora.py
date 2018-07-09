@@ -20,8 +20,8 @@ R version of this package by George Moroz is located [here](https://github.com/l
 
 The package is available under [MIT license](https://github.com/lingcorpora/lingcorpora.py/blob/master/LICENSE).
 
-* [Documentation](https://lingcorpora.github.io/lingcorpora.py/docs.html)
-* [What's new](https://lingcorpora.github.io/lingcorpora.py/news.html)
+* [Documentation](https://katgerasimenko.github.io/lingcorpora.py/docs.html)
+* [What's new](https://katgerasimenko.github.io/lingcorpora.py/news.html)
 
 ## About
 
