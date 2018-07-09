@@ -2,16 +2,16 @@
 title: Documentation
 layout: page
 ---
-Welcome to `lingcorpora`'s documentation. In order to get started, see [Installation](#Installation) and then proceed to [Quickstart](#Quickstart). For parameter description, see [Making queries](#Making-queries). To obtain description of our `Target` and `Result` objects, go to [Working with results](#Working-with-results).
+Welcome to `lingcorpora`'s documentation. In order to get started, see [Installation](#installation) and then proceed to [Quickstart](#quickstart). For parameter description, see [Making queries](#making-queries). To obtain description of our `Target` and `Result` objects, go to [Working with results](#working-with-results).
 
-* [Installation](#Installation)
-* [Quickstart](#Quickstart)
+* [Installation](#installation)
+* [Quickstart](#quickstart)
 * [Making queries](#making-queries)
-  * [lingcorpora.Corpus](#lingcorpora.Corpus)
-  * [Corpora](#Corpora)
-* [Working with results](#Working-with-results)
-  * [lingcorpora.Target](#lingcorpora.Target)
-  * [lingcorpora.Result](#lingcorpora.Result)
+  * [lingcorpora.Corpus](#lingcorporacorpus)
+  * [Corpora](#corpora)
+* [Working with results](#working-with-results)
+  * [lingcorpora.Target](#lingcorporatarget)
+  * [lingcorpora.Result](#lingcorporaresult)
 
 ## Installation
 
@@ -130,7 +130,7 @@ for result in rus_results:
     
     
 
-[To the top](#Documentation)
+[To the top](#documentation)
 
 ## Making queries
  
@@ -231,7 +231,7 @@ There are no arguments, failed queries are taken from `failed` attribute of the 
 ##### Output
 List of `Result` objects for which the second try was successful. It also appends successful results to the `results` attribute of the `Corpus` instance and rewrites `failed` attribute with queries that remained unsuccessful.
 
-[To the top](#Documentation)
+[To the top](#documentation)
 
 ### Corpora
 
@@ -269,7 +269,7 @@ for result in results:
     10 yɛlɛmana kà kɛ́ wárabilen yé kà táa kúngo kɔ́nɔ . ǹka , nê ma sɔ̀n kà à dá , ò dè
     
 
-[To the top](#Documentation)
+[To the top](#documentation)
 
 #### [Maninka Automatically Parsed corpus](http://maslinsky.spb.ru/emk/run.cgi/first_form)
 ##### Relevant parameters
@@ -305,7 +305,7 @@ for result in results:
     10 ߂߉ ߣ ߦߋ ߊ ߝߍ ߟߋ ߖߎߛߎ ߥߏ ߢߐ߲߰ ߦߋ ߞߍ ߊߟߎ ߓߏߟߏ ߕߎߡߊ ߓߍ߯ ߞߊ ߛߌߟߊ߲ ߣ ߢߍ ߞߊ ߣߣߊ ߖߊߡߊߙߌߟߌߟߎ ߓߍ߯ ߟߊߕߋߟߋ߲ , ߛߊ ߊߟߎ ߣߌ ߊߟߎ ߞߐߡߐ߰ߟߎ ߓߍ߯ ߘߌ ߤߍߙߍ ߛߐߘߐ߲ ߞߊߘߊߥߎ .
     
 
-[To the top](#Documentation)
+[To the top](#documentation)
 
 #### [National Corpus of Russian Language](http://ruscorpora.ru)
 ##### Relevant parameters
@@ -341,7 +341,7 @@ for result in results:
     10   О том не надо вспоминать,  Но что-то в сердце изломилось:  ― Не узнаю родную мать. 
     
 
-[To the top](#Documentation)
+[To the top](#documentation)
 
 #### [Parallel subcorpus of National Corpus of Russian Language](http://ruscorpora.ru/search-para-multi.html)
 ##### Relevant parameters
@@ -388,7 +388,7 @@ for result in results:
      Чудо, конечно, выручало редко, больше подводило, особенно атеистов-большевиков, которые теперь так дружно стали взывать к христианскому чуду.    Авось выручит!    ―
     
 
-[To the top](#Documentation)
+[To the top](#documentation)
 
 #### [Center of Chinese Linguistics corpus](http://ccl.pku.edu.cn:8080/ccl_corpus/index.jsp) 
 ##### Relevant parameters
@@ -423,7 +423,7 @@ for result in results:
     10 ...来，拍起马来，比哪一个国家的人能力都大。因之这里所谓“私”的问题却是个...
     
 
-[To the top](#Documentation)
+[To the top](#documentation)
 
 ## Working with results
 
@@ -483,7 +483,7 @@ print(results.results)
     []
     
 
-[To the top](#Documentation)
+[To the top](#documentation)
 
 ### lingcorpora.Target
 
@@ -551,4 +551,4 @@ print(first_hit.kwic(left=30,right=30, level='char'))
     ('егала своими руками лоскутное ', 'одеяло', ', зная, что оно будет её обере')
     
 
-[To the top](#Documentation)
+[To the top](#documentation)
